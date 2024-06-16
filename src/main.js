@@ -14,14 +14,23 @@ const imgEl = document.querySelector('.nav-list');
 
 formEl.addEventListener('submit', e => {
   e.preventDefault();
-  const value = e.target.elements.search.value;
+  const value = e.target.elements.search.value.trim();
   getImg(value)
     .then(data => {
       const markup = gallery(data.hits);
       imgEl.innerHTML = markup;
+      let lightbox = new SimpleLightbox('.gallery a');
+      lightbox.refresh()
+
+});
     })
     .catch(error => console.error(error));
-});
+
+
+
+
+
+
 
 
 

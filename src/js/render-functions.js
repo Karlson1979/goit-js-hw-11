@@ -1,3 +1,4 @@
+
 export function gallery(images) {
   return images
     .map(
@@ -11,11 +12,10 @@ export function gallery(images) {
         downloads,
       }) => `
 
-
+<a href="${largeImageURL}" target="_blank" rel="noopener noreferrer">
       <li class="item">
-  <a href="${largeImageURL}" target="_blank" rel="noopener noreferrer">
     <img src="${webformatURL}" alt="${tags}" width="360" height="170">
-  </a>
+
   <div class="statistic">
     <p>Likes:<br> <span>${likes}</span></p>
     <p>Views:<br> <span>${views}</span></p>
@@ -23,10 +23,11 @@ export function gallery(images) {
     <p>Downloads:<br> <span>${downloads}</span></p>
   </div>
 </li>
-
+</a>
 
 
   `
     )
     .join('');
+
 }
