@@ -14,6 +14,7 @@ export function gallery(images) {
 
 <a href="${largeImageURL}" target="_blank" rel="noopener noreferrer">
       <li class="item">
+
     <img src="${webformatURL}" alt="${tags}" width="360" height="170">
 
   <div class="statistic">
