@@ -30,7 +30,7 @@
 
 .statistic {
   display: flex;
-  /* flex-direction: column; */
+
   justify-content: space-between;
 }
 
@@ -40,7 +40,7 @@
 
 .statistic span {
   font-weight: bold;
-  display: block; /* Ensure the span starts on a new line */
+  display: block; 
 }
 a{
   text-decoration: none;

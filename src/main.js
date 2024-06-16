@@ -6,7 +6,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 import { gallery } from './js/render-functions';
 import { getImg } from './js/pixabay-api';
-import './css/loader.css'; // Импортируем стили загрузчика
+import './css/loader.css';
 
 const formEl = document.querySelector('.form');
 const imgEl = document.querySelector('.nav-list');
@@ -24,7 +24,7 @@ formEl.addEventListener('submit', e => {
     return;
   }
 
-  loaderEl.style.display = 'block'; // Показать загрузчик
+  loaderEl.style.display = 'block';
 
   getImg(value)
     .then(data => {
@@ -52,6 +52,6 @@ formEl.addEventListener('submit', e => {
       });
     })
     .finally(() => {
-      loaderEl.style.display = 'none'; // Скрыть загрузчик
+      loaderEl.style.display = 'none'; 
     });
 });
