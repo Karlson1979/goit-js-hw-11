@@ -2,6 +2,7 @@ import{i as a,S as u}from"./assets/vendor-8c59ed88.js";(function(){const r=docum
 
 <a href="${o}" target="_blank" rel="noopener noreferrer">
       <li class="item">
+
     <img src="${r}" alt="${s}" width="360" height="170">
 
   <div class="statistic">
